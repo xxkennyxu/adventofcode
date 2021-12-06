@@ -5,7 +5,7 @@ public class DiveLocation {
     private static final String DOWN = "down";
 
     public static void main(String[] args) throws Exception {
-        BufferedReader br = InputReader.open(2, 2021);
+        BufferedReader br = HelperElf.openFile(2, 2021);
 
         String st;
         int horizontalLocation = 0;

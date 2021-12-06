@@ -3,7 +3,7 @@ import java.io.BufferedReader;
 public class DepthMeasurements {
 
     public static void main(String[] args) throws Exception {
-        BufferedReader br = InputReader.open(1, 2021);
+        BufferedReader br = HelperElf.openFile(1, 2021);
 
         String st;
         int previous = Integer.MIN_VALUE;
