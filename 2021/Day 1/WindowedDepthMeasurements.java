@@ -1,13 +1,10 @@
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
 import java.util.Arrays;
 
 public class WindowedDepthMeasurements {
 
     public static void main(String[] args) throws Exception {
-        File file = new File("input.txt");
-        BufferedReader br = new BufferedReader(new FileReader(file));
+        BufferedReader br = InputReader.open(1, 2021);
 
         String st;
         int[] window = new int[3];
