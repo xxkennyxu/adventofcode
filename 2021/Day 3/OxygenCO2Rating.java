@@ -60,22 +60,22 @@ public class OxygenCO2Rating {
         ArrayList<String> newZeroBitPosition = new ArrayList<>();
 
         if (readingCondition.apply(oneBitPosition, zeroBitPosition)) {
-            for (String st : oneBitPosition) {
-                if (st.charAt(bitCriteriaPosition) == '1') {
-                    newOneBitPosition.add(st);
-                } else {
-                    newZeroBitPosition.add(st);
-                }
-            }
+            processNewBitPositionsList(oneBitPosition, newOneBitPosition, newZeroBitPosition, bitCriteriaPosition);
         } else {
-            for (String st : zeroBitPosition) {
-                if (st.charAt(bitCriteriaPosition) == '1') {
-                    newOneBitPosition.add(st);
-                } else {
-                    newZeroBitPosition.add(st);
-                }
-            }
+            processNewBitPositionsList(zeroBitPosition, newOneBitPosition, newZeroBitPosition, bitCriteriaPosition);
+
         }
         return findReading(newOneBitPosition, newZeroBitPosition, readingCondition, baseCase, baseCase2,bitCriteriaPosition + 1);
+    }
+
+    private static void processNewBitPositionsList(ArrayList<String> input, ArrayList<String> newOnesBitPositionList,
+                                            ArrayList<String> newTwosPositionList, int bitCriteriaPosition) {
+        for (String st : input) {
+            if (st.charAt(bitCriteriaPosition) == '1') {
+                newOnesBitPositionList.add(st);
+            } else {
+                newTwosPositionList.add(st);
+            }
+        }
     }
 }
