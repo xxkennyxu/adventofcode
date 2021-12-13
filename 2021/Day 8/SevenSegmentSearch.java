@@ -101,7 +101,7 @@ public class SevenSegmentSearch {
     }
 
     public static void main(String[] args) throws Exception {
-        BufferedReader bufferedReader = HelperElf.openFile(8, 2021);
+        BufferedReader bufferedReader = HelperElf.openInputFile(8, 2021);
 
         List<SevenSegmentDisplay> sevenSegmentDisplays = new ArrayList<>();
         String st;

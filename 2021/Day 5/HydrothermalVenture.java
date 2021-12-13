@@ -5,7 +5,7 @@ import java.util.List;
 public class HydrothermalVenture {
 
     public static void main(String[] args) throws Exception {
-        BufferedReader bufferedReader = HelperElf.openFile(5, 2021);
+        BufferedReader bufferedReader = HelperElf.openInputFile(5, 2021);
 
         int[][] hydrothermalMap = new int[1000][1000];
         String st;

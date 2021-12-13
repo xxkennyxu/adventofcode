@@ -5,7 +5,7 @@ public class AimedDiveLocation {
     private static final String DOWN = "down";
 
     public static void main(String[] args) throws Exception {
-        BufferedReader br = HelperElf.openFile(2, 2021);
+        BufferedReader br = HelperElf.openInputFile(2, 2021);
 
         String st;
         int horizontalLocation = 0;

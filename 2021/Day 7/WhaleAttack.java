@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 public class WhaleAttack {
 
     public static void main(String[] args) throws Exception {
-        BufferedReader bufferedReader = HelperElf.openFile(7, 2021);
+        BufferedReader bufferedReader = HelperElf.openInputFile(7, 2021);
 
         List<Integer> crabPositions = new ArrayList<>();
 

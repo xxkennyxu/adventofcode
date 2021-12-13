@@ -6,7 +6,7 @@ import java.util.function.BiFunction;
 public class OxygenCO2Rating {
 
     public static void main(String[] args) throws IOException {
-        BufferedReader br = HelperElf.openFile(3, 2021);
+        BufferedReader br = HelperElf.openInputFile(3, 2021);
 
         String st;
         ArrayList<String> oneBitPosition = new ArrayList<>();

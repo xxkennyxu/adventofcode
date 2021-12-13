@@ -11,7 +11,7 @@ public class LanternFish {
     // Fourth approach: create a count of fishes as the input values range from 0-8 and simulate days by shifting array
 
     public static void main(String[] args) throws Exception {
-        BufferedReader bufferedReader = HelperElf.openFile(6, 2021);
+        BufferedReader bufferedReader = HelperElf.openInputFile(6, 2021);
 
         long[] fish = new long[9];
         String st;

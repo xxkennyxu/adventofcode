@@ -125,7 +125,7 @@ public class SquidBingo {
     }
 
     public static void main(String[] args) throws Exception {
-        BufferedReader bufferedReader = HelperElf.openFile(4, 2021);
+        BufferedReader bufferedReader = HelperElf.openInputFile(4, 2021);
 
         List<Integer> bingoDraws = new ArrayList<>();
         ArrayList<BingoBoard> bingoBoards = new ArrayList<>();

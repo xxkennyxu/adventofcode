@@ -4,7 +4,7 @@ import java.util.Arrays;
 public class WindowedDepthMeasurements {
 
     public static void main(String[] args) throws Exception {
-        BufferedReader br = HelperElf.openFile(1, 2021);
+        BufferedReader br = HelperElf.openInputFile(1, 2021);
 
         String st;
         int[] window = new int[3];

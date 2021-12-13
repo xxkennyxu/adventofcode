@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 public class SmokeBasin {
 
     public static void main(String[] args) throws Exception {
-        BufferedReader bufferedReader = HelperElf.openFile(9, 2021);
+        BufferedReader bufferedReader = HelperElf.openInputFile(9, 2021);
 
         List<List<Integer>> heightMap = new ArrayList<>();
 

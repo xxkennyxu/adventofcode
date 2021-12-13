@@ -1,12 +1,25 @@
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.List;
 
 public final class HelperElf {
-    public static BufferedReader openFile(int day, int year) throws FileNotFoundException {
+    public static BufferedReader openInputFile(int day, int year) throws FileNotFoundException {
         File file = new File(System.getProperty("user.dir") + "\\" + year + "\\" + "Day " + day + "\\input.txt");
         return new BufferedReader(new FileReader(file));
+    }
+
+    public static BufferedReader openTestFile(int day, int year) throws FileNotFoundException {
+        File file = new File(System.getProperty("user.dir") + "\\" + year + "\\" + "Day " + day + "\\test.txt");
+        return new BufferedReader(new FileReader(file));
+    }
+
+    public static List<String> getAllLinesFromInputFile(int day, int year) throws IOException {
+        return Files.lines(Paths.get(System.getProperty("user.dir") + "\\" + year + "\\" + "Day " + day + "\\input.txt")).toList();
+    }
+
+    public static List<String> getAllLinesFromTestFile(int day, int year) throws IOException {
+        return Files.lines(Paths.get(System.getProperty("user.dir") + "\\" + year + "\\" + "Day " + day + "\\test.txt")).toList();
     }
 
     public static int convertBinaryToDecimal(String binary) {

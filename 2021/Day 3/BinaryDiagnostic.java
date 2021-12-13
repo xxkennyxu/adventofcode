@@ -4,7 +4,7 @@ import java.io.IOException;
 public class BinaryDiagnostic {
 
     public static void main(String[] args) throws IOException {
-        BufferedReader br = HelperElf.openFile(3, 2021);
+        BufferedReader br = HelperElf.openInputFile(3, 2021);
 
         String st;
         int numberCount = 0; // since gamma and epsilon are mutually exclusive, we can invert gamma or epsilon
