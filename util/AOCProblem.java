@@ -4,18 +4,18 @@ import java.util.List;
 public abstract class AOCProblem {
     public void run() throws IOException {
         System.out.println("=== Part 1 ===");
-        System.out.println(">> Test Input #1" + ": " + part1(getTestInput(1)));
+        System.out.println(">> Test Input #1" + ": " + part1(getTestInput(0)));
         for (int i = 1; i < getNumberOfTestInputs(); i++) {
-            System.out.println(">> Test Input #" + (i+1) + ": " + part1(getTestInput(i)));
+            System.out.println(">> Test Input #" + (i+1) + ": " + part1(getTestInput(i+1)));
         }
         System.out.println(">> Main Input: " + part1(getInput()));
 
         System.out.println();
 
         System.out.println("=== Part 2 ===");
-        System.out.println(">> Test Input #1" + ": " + part2(getTestInput(1)));
+        System.out.println(">> Test Input #1" + ": " + part2(getTestInput(0)));
         for (int i = 1; i < getNumberOfTestInputs(); i++) {
-            System.out.println(">> Test Input #" + (i+1) + ": " + part2(getTestInput(i)));
+            System.out.println(">> Test Input #" + (i+1) + ": " + part2(getTestInput(i+1)));
         }
         System.out.println(">> Main Input: " + part2(getInput()));
     }
@@ -25,7 +25,7 @@ public abstract class AOCProblem {
     }
 
     private List<String> getTestInput(int numTestInput) throws IOException {
-        if (numTestInput == 1) {
+        if (numTestInput == 0) {
             return HelperElf.getAllLinesFromTestFile(getDay(), getYear());
         }
         return HelperElf.getAllLinesFromTestFile(getDay(), getYear(), numTestInput);
