@@ -18,6 +18,10 @@ public final class HelperElf {
         return Files.lines(Paths.get(System.getProperty("user.dir") + "\\" + year + "\\" + "Day " + day + "\\input.txt")).toList();
     }
 
+    public static List<String> getAllLinesFromTestFile(int day, int year, int numTestInput) throws IOException {
+        return Files.lines(Paths.get(System.getProperty("user.dir") + "\\" + year + "\\" + "Day " + day + "\\test-" + numTestInput + ".txt")).toList();
+    }
+
     public static List<String> getAllLinesFromTestFile(int day, int year) throws IOException {
         return Files.lines(Paths.get(System.getProperty("user.dir") + "\\" + year + "\\" + "Day " + day + "\\test.txt")).toList();
     }
